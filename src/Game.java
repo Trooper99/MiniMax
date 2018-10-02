@@ -34,5 +34,11 @@ public class Game {
         }
         System.out.println("\nThe final state is!");
         board.printState();
+        if(board.win() == 1)
+            System.out.println("You Won!"); //This will never happen HAHAHA!!!
+        else if(board.win() == -1)
+            System.out.println("You Lost....");
+        else
+            System.out.println("No one won.");
     }
 }
